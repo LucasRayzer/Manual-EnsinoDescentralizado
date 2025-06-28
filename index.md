@@ -4,7 +4,7 @@ Neste material, você vai encontrar um resumo direto sobre dois temas que impact
 
 ---
 
-## Índice
+# Índice
 
 **Capítulo VII - DA SEGURANÇA E DAS BOAS PRÁTICAS**  
 Seção I - Da Segurança e do Sigilo de Dados  
@@ -15,7 +15,7 @@ Seção I - Da Segurança e do Sigilo de Dados
 - [Art. 41 - Do Encarregado pelo Tratamento de Dados Pessoais (DPO/Encarregado)](#art-41-do-encarregado-pelo-tratamento-de-dados-pessoais-dpoencarregado)
 
 ---
-## Art. 37: Do Controlador e do Operador
+# Art. 37: Do Controlador e do Operador
 
 O Art. 37 da LGPD determina que o controlador que é quem decide como e por que os dados pessoais são tratados, deve manter os registros claros e atualizados sobre essas operações. Isso inclui como os dados são coletados, usados, compartilhados e armazenados. Mesmo em ambientes descentralizados como o metaverso, essa responsabilidade continua valendo.
 
@@ -184,7 +184,7 @@ function logRiskMitigation(risk, details) {
 Para plataformas Web 3.0, o RIPD é essencial. Documente claramente como separa dados públicos (blockchain) de dados pessoais (off-chain), implemente soluções técnicas para direitos dos titulares, e mantenha logs detalhados de todas as medidas de segurança e mitigação implementadas.
 
 
-## Art. 39: Tratamento de Dados pelo Operador
+# Art. 39: Tratamento de Dados pelo Operador
 
 O **Art. 39 da LGPD** dispõe que o **operador** — aquele que trata dados pessoais em nome do controlador — **deve seguir fielmente as instruções do controlador**. Além disso, o controlador deve fiscalizar e garantir que o tratamento dos dados esteja em conformidade com a lei.  
 
@@ -236,7 +236,7 @@ logger.info(`Tratamento de dados realizado conforme ordem: ${controllerInstructi
 O **Art. 39 da LGPD** destaca a importância de o operador respeitar as instruções do controlador e criar sistemas auditáveis e conformes à lei. O desenvolvedor desempenha um papel fundamental na proteção da privacidade e no cumprimento da legislação, garantindo que os dados pessoais sejam tratados com responsabilidade e transparência.
 
 
-## Art. 40: Da Comunicação de Incidente de Segurança
+# Art. 40: Da Comunicação de Incidente de Segurança
 
 O Art. 40 da LGPD estabelece que o controlador deve comunicar à ANPD e ao titular dos dados pessoais quando ocorrer um incidente de segurança que possa acarretar risco ou dano relevante aos titulares. A comunicação deve ser feita em prazo razoável e incluir informações sobre a natureza do incidente, as categorias de dados afetados, as medidas tomadas para mitigar os riscos e as ações recomendadas aos titulares.
 
@@ -361,7 +361,7 @@ class IncidentCommunication:
 
 O Art. 40 é sobre transparência e responsabilidade quando as coisas dão errado. Como desenvolvedor, você deve implementar sistemas que detectem incidentes automaticamente e tenham processos claros para comunicar rapidamente à ANPD e aos usuários afetados. Lembre-se: a lei pune quem esconde problemas, não quem os reporta de forma transparente e toma medidas para corrigi-los.
 
-## Art. 41: Do Encarregado pelo Tratamento de Dados Pessoais (DPO/Encarregado) 
+# Art. 41: Do Encarregado pelo Tratamento de Dados Pessoais (DPO/Encarregado) 
 
 O Art. 41 da LGPD estabelece que todo controlador deve indicar um encarregado pelo tratamento de dados pessoais, também conhecido como DPO (Data Protection Officer). Esse profissional atua como um canal de comunicação entre o controlador, os titulares dos dados e a Autoridade Nacional de Proteção de Dados (ANPD).
 
