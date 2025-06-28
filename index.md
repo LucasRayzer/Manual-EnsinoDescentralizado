@@ -415,6 +415,6 @@ function saveConsent(consent) {
 }
 ```
 
-### Conclusão do Art. 40
+### Conclusão do Art. 41
 
 O Art. 41 mostra que a LGPD não é responsabilidade só de quem programa, nem só de quem toma decisões jurídicas, mas sim um trabalho conjunto. Como desenvolvedor, você deve saber quem é o DPO, se comunicar com ele, e aplicar as orientações técnicas que ele fornecer. Isso evita decisões isoladas que podem colocar a empresa em risco. O DPO é seu ponto de apoio quando o assunto é proteção de dados.
