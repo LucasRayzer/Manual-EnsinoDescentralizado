@@ -61,7 +61,7 @@ useEffect(() => {
   alert("Este ambiente descentralizado (metaverso) coleta seu endereço e preferências para melhorar a experiência.");
 }, []);
 ```
-### 3. Transparência no Frontend/Backend
+### 3. Exemplo de Cadeia de Custódia
 ![image](https://github.com/user-attachments/assets/7717da70-96e9-4e18-a9ae-66fcedd0c01b)
 
 ### Conclusão do Art. 37
