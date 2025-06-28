@@ -63,9 +63,9 @@ useEffect(() => {
 ```
 ### 3. Exemplo de Cadeia de Custódia
 Um bom exemplo para registros são as cadeia de custódia, que segue a risca tal artigo, onde é de responsabilidade de operadores e o sistema deve estar obviamente alinhado com as leis estabelecidas.
-```
+
 ![image](https://github.com/user-attachments/assets/7717da70-96e9-4e18-a9ae-66fcedd0c01b)
-```
+
 ### Conclusão do Art. 37
 
 Mesmo em sistemas descentralizados, o dever de manter registro, clareza e responsabilidade sobre os dados pessoais ainda é seu. A LGPD continua válida no metaverso. Registrar e deixar rastros das operações, de forma segura e ética, é mais que obrigação legal, é boa prática de engenharia de software.
