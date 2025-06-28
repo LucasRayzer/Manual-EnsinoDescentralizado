@@ -74,11 +74,16 @@ Mesmo em sistemas descentralizados, o dever de manter registro, clareza e respon
 
 O Art. 38 da LGPD estabelece que a ANPD pode determinar ao controlador que elabore um relatório de impacto à proteção de dados pessoais quando necessário. O relatório deve conter, no mínimo: descrição dos tipos de dados coletados, metodologia para coleta e segurança, e análise das medidas de mitigação de risco adotadas.
 
+![image](https://github.com/user-attachments/assets/11ea8d48-fbfd-452c-9a41-01bba42315ae)
+
 ## O que isso significa para você, desenvolvedor?
 
 Se você está desenvolvendo sistemas Web 3.0 (como a plataforma CogniChain), a ANPD pode solicitar um RIPD detalhado sobre como sua blockchain processa dados pessoais. Isso significa que você precisa documentar exatamente quais dados coleta, como protege na blockchain, e quais riscos identificou - especialmente no contexto descentralizado.
 
 ## Implementação Técnica para Compliance com Art. 38:
+
+![image](https://github.com/user-attachments/assets/d8122637-34d4-4713-a10e-51243056259c)
+![image](https://github.com/user-attachments/assets/dfa639e7-3bd8-4062-aa15-3a1ff16dad88)
 
 ### 1. Descrição dos Tipos de Dados Coletados
 
