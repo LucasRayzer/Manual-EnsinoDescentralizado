@@ -40,12 +40,12 @@ Em ambientes Web 3.0 descentralizados, os contratos inteligentes podem tratar da
 Exemplo: Log de Tratamento de Dados em Solidity
 
 event DadosTratados(address operador, string acao, uint timestamp);
-
+```Solidity
 function armazenarEmail(string memory _email) public {
     // ... armazenar email de forma segura (não recomendado em blockchain pública)
     emit DadosTratados(msg.sender, "Armazenamento de e-mail", block.timestamp);
 }
-
+```
 #### 2. Transparência no Frontend/Backend
 
 Os usuários devem saber o que acontece com seus dados, seja em um formulário Web 2.0 ou em uma ambiente como um metaverso descentralizado e conectado na Web 3.0.
@@ -56,11 +56,11 @@ Os usuários devem saber o que acontece com seus dados, seja em um formulário W
 *   Exibir avisos de coleta no momento exato em que o dado é inserido.
 
 Exemplo: Tela de Consentimento com Informações Transparentes em React
-
+```JavaScript
 useEffect(() => {
   alert("Este ambiente descentralizado (metaverso) coleta seu endereço e preferências para melhorar a experiência.");
 }, []);
-
+```
 ### Conclusão do Art. 37
 
 Mesmo em sistemas descentralizados, o dever de manter registro, clareza e responsabilidade sobre os dados pessoais ainda é seu. A LGPD continua válida no metaverso. Registrar e deixar rastros das operações, de forma segura e ética, é mais que obrigação legal, é boa prática de engenharia de software.
