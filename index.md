@@ -1,3 +1,7 @@
+---
+layout: default
+title: LGPD - Cap.37 & Cap.41
+---
 # LGPD - Segurança e Sigilo de dados
 
 Neste material, você vai encontrar um resumo direto sobre dois temas que impactam bastante quem desenvolve sistemas ou trabalha com dados: a segurança dos dados e as sanções que podem acontecer quando algo dá errado. A ideia é mostrar, de forma prática, o que a lei diz e como isso afeta o trabalho técnico.
