@@ -183,56 +183,58 @@ function logRiskMitigation(risk, details) {
 
 Para plataformas Web 3.0, o RIPD é essencial. Documente claramente como separa dados públicos (blockchain) de dados pessoais (off-chain), implemente soluções técnicas para direitos dos titulares, e mantenha logs detalhados de todas as medidas de segurança e mitigação implementadas.
 
+
 ## Art. 39: Tratamento de Dados pelo Operador
 
-O **Art. 39 da LGPD** dispõe que o **operador** — aquele que trata dados pessoais em nome do controlador — **deve seguir fielmente as instruções do controlador**. Na **Web 3.0**, essa responsabilidade ganha novos desafios, pois o tratamento ocorre em ecossistemas descentralizados, com dados distribuídos em blockchains ou redes peer-to-peer. O artigo reforça a necessidade de conformidade legal mesmo em arquiteturas distribuídas, preservando a privacidade e a segurança dos dados pessoais.
+O **Art. 39 da LGPD** dispõe que o **operador** — aquele que trata dados pessoais em nome do controlador — **deve seguir fielmente as instruções do controlador**. Além disso, o controlador deve fiscalizar e garantir que o tratamento dos dados esteja em conformidade com a lei.  
+
+Esse artigo reforça a necessidade de responsabilidade compartilhada no ciclo de tratamento dos dados pessoais, assegurando a privacidade e a proteção dos titulares.
 
 ### O que isso significa para você, desenvolvedor?
 
-Se você desenvolve soluções em **Web 3.0**, como DAppsi, contratos inteligentes ou plataformas descentralizadas:
-- É essencial garantir que o tratamento de dados pessoais esteja alinhado às ordens do controlador, mesmo em ambientes distribuídos.
-- Você deve evitar criar lógicas ocultas ou fluxos de dados que não estejam previstos.
-- O código precisa ser transparente e auditável, permitindo ao controlador e à comunidade verificar a conformidade.
+Se você desenvolve, implementa ou mantém sistemas que realizam o tratamento de dados pessoais:
+- É essencial garantir que o tratamento de dados esteja alinhado às ordens do controlador.
+- Não devem existir lógicas ocultas ou fluxos de dados que não tenham sido autorizados.
+- O sistema deve ser transparente e auditável, permitindo ao controlador verificar a conformidade do tratamento.
 
 ### Impacto no Dev e Como Diminuir o Risco:
 
-#### 1. Contratos inteligentes e fluxos de dados auditáveis
+#### 1. Garantir que o tratamento siga as ordens do controlador
 
-Na Web 3.0, o tratamento ocorre muitas vezes via contratos inteligentes e redes imutáveis. É fundamental que os contratos reflitam com exatidão as instruções do controlador.
+Todo o processo de coleta, armazenamento, processamento ou exclusão de dados deve respeitar o que foi formalmente definido pelo controlador.
 
 **Boas Práticas:**
 
-* Desenvolva contratos inteligentes de código aberto, permitindo auditoria independente.
-* Mapeie e documente o fluxo dos dados pessoais no ecossistema.
-* Utilize mecanismos de governança (como DAOs) para validar alterações nos contratos.
+* Mantenha o código e a documentação claros e alinhados às orientações do controlador.
+* Use configurações e parâmetros controlados pelo controlador para definir o comportamento do tratamento de dados.
+* Realize revisões de código focadas na conformidade com a LGPD.
 
-```solidity
-// Exemplo: execução condicionada à aprovação do controlador
-if (controllerApproved) {
-    processUserData(userData);
+```typescript
+// Exemplo: execução condicionada à configuração aprovada
+if (config.enableDataProcessing) {
+    processUserData(data);
 }
 ```
 
-#### 2. Facilitar o monitoramento e auditoria pelo controlador
+#### 2. Facilitar a auditoria e o monitoramento pelo controlador
 
-Mesmo em sistemas descentralizados, o controlador deve ter meios de acompanhar o tratamento dos dados pessoais.
+O controlador deve ter meios de verificar como os dados são tratados no sistema.
 
 **Boas Práticas:**
 
-* Emita eventos nos contratos inteligentes para registrar operações relevantes.
-* Construa painéis que leiam os eventos on-chain e mostrem informações em tempo real ao controlador.
-* Prefira armazenar dados pessoais off-chain, usando hashes ou referências na blockchain para reforçar a privacidade.
+* Gere logs consistentes e seguros para registrar o tratamento dos dados.
+* Forneça APIs ou painéis que permitam ao controlador acessar informações sobre o tratamento.
+* Evite hardcodes e implemente soluções flexíveis que possam ser ajustadas conforme as orientações do controlador.
 
-```solidity
-// Exemplo: evento registrando o tratamento sob ordem do controlador
-event DataProcessed(address indexed operator, string controllerInstructionId);
-
-emit DataProcessed(msg.sender, controllerInstructionId);
+```typescript
+// Exemplo: gerar log de tratamento conforme instrução do controlador
+logger.info(`Tratamento de dados realizado conforme ordem: ${controllerInstructionId}`);
 ```
 
 ### Conclusão do Art. 39
 
-O **Art. 39 da LGPD** reforça que, mesmo na **Web 3.0**, o operador deve seguir as instruções do controlador e criar soluções auditáveis, seguras e conformes à lei. O desenvolvedor tem o papel crucial de equilibrar inovação tecnológica e responsabilidade com a privacidade e proteção dos dados pessoais.
+O **Art. 39 da LGPD** destaca a importância de o operador respeitar as instruções do controlador e criar sistemas auditáveis e conformes à lei. O desenvolvedor desempenha um papel fundamental na proteção da privacidade e no cumprimento da legislação, garantindo que os dados pessoais sejam tratados com responsabilidade e transparência.
+
 
 ## Art. 40: Da Comunicação de Incidente de Segurança
 
