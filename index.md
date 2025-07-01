@@ -1,45 +1,15 @@
-
-<style>
-.sidebar {
-  position: fixed;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 250px;
-  background-color: #f8f9fa;
-  padding: 20px;
-  overflow-y: auto;
-  border-right: 1px solid #ddd;
-}
-.content {
-  margin-left: 270px;
-  padding: 20px;
-}
-.sidebar a {
-  display: block;
-  margin-bottom: 10px;
-  color: #007bff;
-  text-decoration: none;
-}
-.sidebar a:hover {
-  text-decoration: underline;
-}
-</style>
-
-<div class="sidebar">
-  <h3>Seções</h3>
-  <a href="#art-37-do-controlador-e-do-operador">Art. 37 - Controlador e Operador</a>
-  <a href="#art-38-relatório-de-impacto-à-proteção-de-dados-pessoais-ripd">Art. 38 - RIPD</a>
-  <a href="#art-39-tratamento-de-dados-pelo-operador">Art. 39 - Tratamento pelo Operador</a>
-  <a href="#art-40-da-comunicação-de-incidente-de-segurança">Art. 40 - Interoperabilidade</a>
-  <a href="#art-41-do-encarregado-pelo-tratamento-de-dados-pessoais-dpoencarregado">Art. 41 - DPO</a>
-</div>
-
-<div class="content">
-
 # LGPD - Segurança e Sigilo de dados
 
 Neste material, você vai encontrar um resumo direto sobre dois temas que impactam bastante quem desenvolve sistemas ou trabalha com dados: a segurança dos dados e as sanções que podem acontecer quando algo dá errado. A ideia é mostrar, de forma prática, o que a lei diz e como isso afeta o trabalho técnico.
+
+
+> **🔗 Navegue por seção:**
+> - [Art. 37 - Controlador e Operador](#art-37-do-controlador-e-do-operador)
+> - [Art. 38 - RIPD](#art-38-relatório-de-impacto-à-proteção-de-dados-pessoais-ripd)
+> - [Art. 39 - Tratamento pelo Operador](#art-39-tratamento-de-dados-pelo-operador)
+> - [Art. 40 - Interoperabilidade](#art-40-da-comunicação-de-incidente-de-segurança)
+> - [Art. 41 - DPO](#art-41-do-encarregado-pelo-tratamento-de-dados-pessoais-dpoencarregado)
+
 
 ---
 
@@ -450,5 +420,3 @@ function saveConsent(consent) {
 ### Conclusão do Art. 41
 
 O Art. 41 mostra que a LGPD não é responsabilidade só de quem programa, nem só de quem toma decisões jurídicas, mas sim um trabalho conjunto. Como desenvolvedor, você deve saber quem é o DPO, se comunicar com ele, e aplicar as orientações técnicas que ele fornecer. Isso evita decisões isoladas que podem colocar a empresa em risco. O DPO é seu ponto de apoio quando o assunto é proteção de dados.
-
-</div> 
