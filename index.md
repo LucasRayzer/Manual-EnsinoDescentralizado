@@ -11,7 +11,7 @@ Seção I - Da Segurança e do Sigilo de Dados
 - [Art. 37 - Do Controlador e do Operador](#art-37-do-controlador-e-do-operador)  
 - [Art. 38 - Relatório de Impacto à Proteção de Dados Pessoais (RIPD)](#art-38-relatório-de-impacto-à-proteção-de-dados-pessoais-ripd)  
 - [Art. 39 - Tratamento de Dados pelo Operador](#art-39-tratamento-de-dados-pelo-operador)  
-- [Art. 40 - Da Comunicação de Incidente de Segurança](#art-40-da-comunicação-de-incidente-de-segurança)  
+- [Art. 40 - Padrões de Interoperabilidade, Portabilidade e Guarda de Registros](#art-40-padroes-de-interoperabilidade-portabilidade-e-guarda-de-registros)  
 - [Art. 41 - Do Encarregado pelo Tratamento de Dados Pessoais (DPO/Encarregado)](#art-41-do-encarregado-pelo-tratamento-de-dados-pessoais-dpoencarregado)
 
 ---
