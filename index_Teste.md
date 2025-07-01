@@ -322,38 +322,6 @@ function deleteExpiredRecords() {
 
 O **Art. 40 da LGPD** reforça a importância de sistemas interoperáveis, seguros e transparentes, que respeitem o direito de portabilidade e livre acesso dos titulares. O desenvolvedor deve acompanhar as normas da ANPD e garantir que o sistema esteja preparado para atender a esses padrões, promovendo a confiança e a conformidade legal.
 
----
-
-# Seção II
-
-## Do Encarregado pelo Tratamento de Dados Pessoais
-
-A **Seção II da LGPD** trata da figura do Encarregado pelo Tratamento de Dados Pessoais, também conhecido como DPO (Data Protection Officer). O encarregado é o elo entre a empresa, os titulares dos dados e a Autoridade Nacional de Proteção de Dados (ANPD).
-
-### O que isso significa para você, desenvolvedor?
-
-- Sempre que houver dúvidas sobre o uso de dados pessoais, o DPO é a pessoa indicada para orientar.
-- O DPO é responsável por receber reclamações, prestar esclarecimentos e adotar providências em nome do controlador.
-- O contato do DPO deve ser público e facilmente acessível, inclusive em sites e sistemas.
-
-### Boas Práticas para o Dev:
-
-* Saiba quem é o DPO da sua organização e como contatá-lo.
-* Consulte o DPO sempre que houver dúvidas sobre coleta, uso, armazenamento ou exclusão de dados.
-* Implemente controles e políticas sugeridas pelo DPO no ciclo de desenvolvimento.
-* Garanta que o contato do DPO esteja visível para usuários, conforme exigência legal.
-
-```html
-<!-- Exemplo: exibir contato do DPO no site -->
-<footer>
-    <p>Encarregado de Dados: Maria Souza – <a href="mailto:dpo@empresa.com">dpo@empresa.com</a></p>
-</footer>
-```
-
-### Conclusão da Seção II
-
-A presença do DPO é fundamental para garantir a conformidade com a LGPD. Como desenvolvedor, mantenha o diálogo aberto com o encarregado e siga suas orientações para evitar riscos e garantir a proteção dos dados pessoais.
-
 # Art. 41: Do Encarregado pelo Tratamento de Dados Pessoais (DPO/Encarregado) 
 
 O Art. 41 da LGPD estabelece que todo controlador deve indicar um encarregado pelo tratamento de dados pessoais, também conhecido como DPO (Data Protection Officer). Esse profissional atua como um canal de comunicação entre o controlador, os titulares dos dados e a Autoridade Nacional de Proteção de Dados (ANPD).
