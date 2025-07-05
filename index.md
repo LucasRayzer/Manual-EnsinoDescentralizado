@@ -56,11 +56,12 @@ Os usuários devem saber o que acontece com seus dados, seja em um formulário W
 *   Exibir avisos de coleta no momento exato em que o dado é inserido.
 
 Exemplo: Tela de Consentimento com Informações Transparentes em React
+```
 JavaScript
 useEffect(() => {
   alert("Este ambiente descentralizado (metaverso) coleta seu endereço e preferências para melhorar a experiência.");
 }, []);
-
+```
 ### 3. Exemplo de Cadeia de Custódia
 Um bom exemplo para registros são as cadeias de custódia, que segue a risca tal artigo, onde é de responsabilidade de operadores e o sistema deve estar obviamente alinhado com as leis estabelecidas.
 
@@ -125,6 +126,7 @@ O RIPD deve explicar COMO você coleta dados e COMO garante segurança. Em Web 3
 * Registrar auditorias de smart contracts
 
 javascript
+```
 // Coleta segura com consentimento
 function collectData(walletAddress, personalData) {
   // 1. Verificar consentimento
@@ -148,7 +150,7 @@ function collectData(walletAddress, personalData) {
 function encrypt(data) {
   return crypto.encrypt(data, process.env.SECRET_KEY);
 }
-
+```
 
 ### 3. Análise de Medidas de Mitigação de Risco
 
@@ -162,6 +164,7 @@ O RIPD deve demonstrar que você identificou riscos específicos da Web 3.0 e im
 * Estabelecer procedimentos para DAOs e governança descentralizada
 
 javascript
+```
 // Solução para direito ao esquecimento
 function handleForgetRequest(walletAddress) {
   // Não pode deletar da blockchain (imutável)
@@ -188,7 +191,7 @@ function logRiskMitigation(risk, details) {
   
   database.save(log);
 }
-
+```
 ## Conclusão do Art. 38
 
 Para plataformas Web 3.0, o RIPD é essencial. Documente claramente como separa dados públicos (blockchain) de dados pessoais (off-chain), implemente soluções técnicas para direitos dos titulares, e mantenha logs detalhados de todas as medidas de segurança e mitigação implementadas.
@@ -218,14 +221,14 @@ Todo o processo de coleta, armazenamento, processamento ou exclusão de dados de
 * Mantenha o código e a documentação claros e alinhados às orientações do controlador.
 * Use configurações e parâmetros controlados pelo controlador para definir o comportamento do tratamento de dados.
 * Realize revisões de código focadas na conformidade com a LGPD.
-
-typescript
+```
+//Typescript
 // Exemplo: execução condicionada à configuração aprovada
 if (config.enableDataProcessing) {
     processUserData(data);
 }
 
-
+```
 #### 2. Facilitar a auditoria e o monitoramento pelo controlador
 
 O controlador deve ter meios de verificar como os dados são tratados no sistema.
@@ -235,14 +238,15 @@ O controlador deve ter meios de verificar como os dados são tratados no sistema
 * Gere logs consistentes e seguros para registrar o tratamento dos dados.
 * Forneça APIs ou painéis que permitam ao controlador acessar informações sobre o tratamento.
 * Evite hardcodes e implemente soluções flexíveis que possam ser ajustadas conforme as orientações do controlador.
-
-typescript
+```
+//Typescript
 // Exemplo: gerar log de tratamento conforme instrução do controlador
+
 logger.info(`Tratamento de dados realizado conforme ordem: ${controllerInstructionId}`);
 
 ![alt text](<artigo39.png>)
 ### Conclusão do Art. 39
-
+```
 O *Art. 39 da LGPD* destaca a importância de o operador respeitar as instruções do controlador e criar sistemas auditáveis e conformes à lei. O desenvolvedor desempenha um papel fundamental na proteção da privacidade e no cumprimento da legislação, garantindo que os dados pessoais sejam tratados com responsabilidade e transparência.
 
 
@@ -269,14 +273,14 @@ Os sistemas precisam ser capazes de exportar e importar dados em formatos padron
 * Adotar formatos abertos e amplamente aceitos (JSON, CSV, XML) para exportação/importação de dados.
 * Documentar APIs de portabilidade e garantir autenticação adequada.
 * Testar a compatibilidade dos dados exportados com sistemas de terceiros.
-
-typescript
+```
+//Typescript
 // Exemplo: exportação de dados do usuário em JSON
 function exportUserData(userId) {
     const userData = database.getUserData(userId);
     return JSON.stringify(userData);
 }
-
+```
 
 #### 2. Garantir Livre Acesso e Transparência
 
@@ -287,14 +291,14 @@ O titular deve conseguir acessar facilmente seus dados e saber como eles estão 
 * Criar endpoints ou painéis para consulta dos dados pessoais.
 * Registrar logs de acesso e exportação de dados.
 * Informar claramente ao usuário sobre o uso e o tempo de guarda dos dados.
-
-typescript
+```
+//Typescript
 // Exemplo: endpoint para consulta dos dados pessoais
 app.get('/meus-dados', authenticate, (req, res) => {
     const userData = database.getUserData(req.user.id);
     res.json(userData);
 });
-
+```
 
 #### 3. Atender aos Padrões de Segurança e Guarda de Registros
 
@@ -305,8 +309,8 @@ A ANPD pode definir requisitos mínimos de segurança e prazos para retenção d
 * Implementar criptografia e controle de acesso nos registros.
 * Automatizar a exclusão de dados após o prazo de guarda.
 * Monitorar atualizações da ANPD sobre padrões e prazos.
-
-typescript
+```
+Typescript
 // Exemplo: exclusão automática após prazo de guarda
 function deleteExpiredRecords() {
     const now = Date.now();
@@ -316,7 +320,7 @@ function deleteExpiredRecords() {
         }
     });
 }
-
+```
 
 ### Conclusão do Art. 40
 
@@ -344,13 +348,13 @@ Pode parecer simples, mas muita gente trabalha em sistemas com dados pessoais e 
 *   Ter o contato salvo (e-mail, ramal, Slack etc.)
 *   Consultar sempre que tiver dúvida sobre uso de dados
 *   Garantir que o contato esteja visível no sistema, site ou app (quando aplicável)
-
-html
+```
+//html
 <!-- Exemplo em um site institucional -->
 <footer>
     <p>Encarregado de Dados: João Silva – <a href="mailto:dpo@empresa.com">dpo@empresa.com</a></p>
 </footer>
-
+```
 
 #### 2. Incorporar as Orientações do DPO no Ciclo de Desenvolvimento
 
@@ -361,8 +365,8 @@ O DPO pode indicar diretrizes sobre como tratar dados, como responder solicitaç
 *   Participar de reuniões com o DPO quando for discutir mudanças que envolvam dados
 *   Documentar decisões de arquitetura que envolvam dados sensíveis
 *   Implementar controles sugeridos pelo DPO (como anonimização, consentimento granular, logging de acesso)
-
-javascript
+```
+//javascript
 // Exemplo: coletar consentimento granular conforme diretriz do DPO
 const consentForm = {
   analytics: false,
@@ -376,7 +380,7 @@ function saveConsent(consent) {
 }
 
 ![alt text](<artigo41.png>)
-
+```
 ### Conclusão do Art. 41
 
 O Art. 41 mostra que a LGPD não é responsabilidade só de quem programa, nem só de quem toma decisões jurídicas, mas sim um trabalho conjunto. Como desenvolvedor, você deve saber quem é o DPO, se comunicar com ele, e aplicar as orientações técnicas que ele fornecer. Isso evita decisões isoladas que podem colocar a empresa em risco. O DPO é seu ponto de apoio quando o assunto é proteção de dados.
