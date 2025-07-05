@@ -375,6 +375,7 @@ function saveConsent(consent) {
   localStorage.setItem('userConsent', JSON.stringify(consent));
 }
 
+![alt text](<artigo41.png>)
 
 ### Conclusão do Art. 41
 
