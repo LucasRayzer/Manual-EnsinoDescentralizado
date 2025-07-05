@@ -240,7 +240,7 @@ typescript
 // Exemplo: gerar log de tratamento conforme instrução do controlador
 logger.info(`Tratamento de dados realizado conforme ordem: ${controllerInstructionId}`);
 
-
+![alt text](<artigo39.png>)
 ### Conclusão do Art. 39
 
 O *Art. 39 da LGPD* destaca a importância de o operador respeitar as instruções do controlador e criar sistemas auditáveis e conformes à lei. O desenvolvedor desempenha um papel fundamental na proteção da privacidade e no cumprimento da legislação, garantindo que os dados pessoais sejam tratados com responsabilidade e transparência.
