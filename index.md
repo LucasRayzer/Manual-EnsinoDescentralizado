@@ -40,12 +40,13 @@ Em ambientes Web 3.0 descentralizados, os contratos inteligentes podem tratar da
 Exemplo: Log de Tratamento de Dados em Solidity
 
 event DadosTratados(address operador, string acao, uint timestamp);
+```
 Solidity
 function armazenarEmail(string memory _email) public {
     // ... armazenar email de forma segura (não recomendado em blockchain pública)
     emit DadosTratados(msg.sender, "Armazenamento de e-mail", block.timestamp);
 }
-
+```
 #### 2. Transparência no Frontend/Backend
 
 Os usuários devem saber o que acontece com seus dados, seja em um formulário Web 2.0 ou em uma ambiente como um metaverso descentralizado e conectado na Web 3.0.
@@ -96,8 +97,8 @@ O RIPD exige identificação completa de todos os dados pessoais no sistema. Par
 * Identificar se dados ficam na blockchain (imutáveis) ou em sistemas tradicionais
 * Documentar dados de carteiras digitais e transações
 * Especificar dados de governança (DAOs) e certificações (NFTs)
-
-javascript
+```
+Javascript
 // Catalogação simples de dados para RIPD
 const studentData = {
   name: "João Silva",           // Dado pessoal
@@ -112,7 +113,7 @@ const dataTypes = {
   sensitive: ["cpf"], 
   public: ["walletAddress", "diplomaHash"]
 };
-
+```
 
 ### 2. Metodologia para Coleta e Garantia de Segurança
 
@@ -124,9 +125,9 @@ O RIPD deve explicar COMO você coleta dados e COMO garante segurança. Em Web 3
 * Explicar separação entre dados públicos (blockchain) e privados (off-chain)
 * Demonstrar criptografia para dados sensíveis
 * Registrar auditorias de smart contracts
-
-javascript
 ```
+Javascript
+
 // Coleta segura com consentimento
 function collectData(walletAddress, personalData) {
   // 1. Verificar consentimento
@@ -162,9 +163,9 @@ O RIPD deve demonstrar que você identificou riscos específicos da Web 3.0 e im
 * Implementar soluções técnicas para compliance LGPD
 * Documentar riscos de vazamento de chaves privadas
 * Estabelecer procedimentos para DAOs e governança descentralizada
-
-javascript
 ```
+Javascript
+
 // Solução para direito ao esquecimento
 function handleForgetRequest(walletAddress) {
   // Não pode deletar da blockchain (imutável)
@@ -222,7 +223,7 @@ Todo o processo de coleta, armazenamento, processamento ou exclusão de dados de
 * Use configurações e parâmetros controlados pelo controlador para definir o comportamento do tratamento de dados.
 * Realize revisões de código focadas na conformidade com a LGPD.
 ```
-//Typescript
+Typescript
 // Exemplo: execução condicionada à configuração aprovada
 if (config.enableDataProcessing) {
     processUserData(data);
@@ -239,7 +240,7 @@ O controlador deve ter meios de verificar como os dados são tratados no sistema
 * Forneça APIs ou painéis que permitam ao controlador acessar informações sobre o tratamento.
 * Evite hardcodes e implemente soluções flexíveis que possam ser ajustadas conforme as orientações do controlador.
 ```
-//Typescript
+Typescript
 // Exemplo: gerar log de tratamento conforme instrução do controlador
 
 logger.info(`Tratamento de dados realizado conforme ordem: ${controllerInstructionId}`);
@@ -274,7 +275,7 @@ Os sistemas precisam ser capazes de exportar e importar dados em formatos padron
 * Documentar APIs de portabilidade e garantir autenticação adequada.
 * Testar a compatibilidade dos dados exportados com sistemas de terceiros.
 ```
-//Typescript
+Typescript
 // Exemplo: exportação de dados do usuário em JSON
 function exportUserData(userId) {
     const userData = database.getUserData(userId);
@@ -292,7 +293,7 @@ O titular deve conseguir acessar facilmente seus dados e saber como eles estão 
 * Registrar logs de acesso e exportação de dados.
 * Informar claramente ao usuário sobre o uso e o tempo de guarda dos dados.
 ```
-//Typescript
+Typescript
 // Exemplo: endpoint para consulta dos dados pessoais
 app.get('/meus-dados', authenticate, (req, res) => {
     const userData = database.getUserData(req.user.id);
