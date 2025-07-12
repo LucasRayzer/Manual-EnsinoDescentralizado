@@ -69,7 +69,8 @@ useEffect(() => {
 Um bom exemplo para registros são as cadeias de custódia, que segue a risca tal artigo, onde é de responsabilidade de operadores e o sistema deve estar obviamente alinhado com as leis estabelecidas.
 
 ![image](https://github.com/user-attachments/assets/7717da70-96e9-4e18-a9ae-66fcedd0c01b)
-Fonte:https://revistaft.com.br/importancia-da-cadeia-de-custodia-para-a-producao-de-prova-pericial/
+
+Fonte: https://revistaft.com.br/importancia-da-cadeia-de-custodia-para-a-producao-de-prova-pericial/
 
 ### Conclusão do Art. 37
 
